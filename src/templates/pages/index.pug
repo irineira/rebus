@@ -1,0 +1,33 @@
+extends ../template
+
+block varibles
+    - var title = "title"
+
+block content
+   
+    .content
+        section.sect1
+            .sect1__top
+                h1.sect1__title Aby otworzyć drzwi, rozwiąż rebus
+                p.sect1__text i wprowadź dwucyfrowy numer do zamku szyfrowego
+            .sect1__middle
+                .rebus
+                    .rebus__left
+                        img(src="./images/eggs.svg", alt="").rebus__eggs
+                    .rebus__right
+                        .castle
+                            img(src="./images/za.svg", alt="").castle__img
+                            img(src="./images/vetki.svg", alt="").castle__vetki
+                            .castle__block
+                                .quantity
+                                    input(type="number" min="0" max="9" step="1" value="0").quantity__input
+                                .quantity
+                                    input(type="number" min="0" max="9" step="1" value="0").quantity__input
+
+            .sect1__bottom 
+                button.sect1__button
+                    span Otwórz zamek
+            
+            img(src="./images/planeta.svg", alt="").sect1__planeta
+            img(src="./images/z.svg", alt="").sect1__zayats
+                            

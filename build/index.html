@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta content="ie-edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="./styles/app.min.css?1">
+  </head>
+  <body>
+    <div class="content">
+      <section class="sect1">
+        <div class="sect1__top">
+          <h1 class="sect1__title">Aby otworzyć drzwi, rozwiąż rebus</h1>
+          <p class="sect1__text">i wprowadź dwucyfrowy numer do zamku szyfrowego</p>
+        </div>
+        <div class="sect1__middle">
+          <div class="rebus">
+            <div class="rebus__left"><img class="rebus__eggs" src="./images/eggs.svg" alt=""></div>
+            <div class="rebus__right">
+              <div class="castle"><img class="castle__img" src="./images/za.svg" alt=""><img class="castle__vetki" src="./images/vetki.svg" alt="">
+                <div class="castle__block">
+                  <div class="quantity">
+                    <input class="quantity__input" type="number" min="0" max="9" step="1" value="0">
+                  </div>
+                  <div class="quantity">
+                    <input class="quantity__input" type="number" min="0" max="9" step="1" value="0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sect1__bottom"> 
+          <button class="sect1__button"><span>Otwórz zamek</span></button>
+        </div><img class="sect1__planeta" src="./images/planeta.svg" alt=""><img class="sect1__zayats" src="./images/z.svg" alt="">
+      </section>
+    </div>
+    <script src="./dist/js/jquery-3.2.1.min.js?1"></script>
+    <script src="./scripts/app.js?1"></script>
+  </body>
+</html>
