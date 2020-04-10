@@ -1,21 +1,31 @@
 .modalDialogCustom
     .shadow_popap
-
     .contentpopap 
+        p.contentpopap__title Niestety twoja odpowiedź
+            br
+            | jest 
+            span
+                |nieprawidłowa.
+        span.contentpopap__text Spróbuj ponownie
 
-        .contentpopap__head
-            .contentpopap__title
-                span Leave your contact details.
+        .contentpopap__close
 
-        form.contentpopap__form
-            
-            .contentpopap__blockinputs
-                input.inp_name#idi(type="text" placeholder="Your Name" required)
-                input.inp_mail(type="email" placeholder="Your Email" required)
-                    
-                    
-            .contentpopap__button
-                button.button(type="submit") Send
+
+
+
+.modalDialogCustom.modalDialogCustom2
+    .shadow_popap
+    .contentpopap 
+        p.contentpopap__title 
+            span 
+                |Brawo!
+            br
+            | Wykonałeś zadanie. Twój kod promocyjny to  
+            span
+                | EASTER2020.
+        span.contentpopap__text Wpisz go opłacając za abonament i
+            br
+            |uzyskaj rabat -15%.
 
         .contentpopap__close
 

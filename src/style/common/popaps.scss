@@ -29,53 +29,100 @@
 
                                                                // content
 .contentpopap{
-    background-color: $white;
+    background-color: white;
     position: absolute;
-    top: 50%;
+    top: rem(400);
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     z-index: 20;
-    // width: 1000px;
-
-    &__head{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: rem(120);
-    }
+    width: rem(800);
+    box-shadow: 0px 0px rem(60) rgba(0, 0, 0, 0.5);
+    border-radius: rem(20);
+    padding: rem(48) 0 rem(56) 0;
+    text-align: center;
 
     &__title{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rem(40);
+        line-height: rem(49);
+        color: #161C2F;
+        margin-bottom: rem(40);
         span{
-            color: #38373b;
-            font-size: rem(50);
-            font-weight: 500;
-            line-height: rem(28);
+            text-transform: uppercase;
+            color: #EA3030;
+            font-weight: 700;
         }
     }
 
-    &__form{
-
-    }
-
-    &__blockinputs{
-
-    }
-
-    &__button{
-
+    &__text{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rem(40);
+        line-height: rem(49);
+        color: #161C2F;
     }
 
     &__close{
-        
-        width: rem(19);
-        height: rem(19);
-        background-color: red;
+        position: absolute;
+        top: rem(30);
+        right: rem(30);
+        width: rem(34);
+        height: rem(34);
+        background-image: url("../images/close.svg");
+        background-size: cover;
         
     }
 }
 
 
+.modalDialogCustom2{
+    .contentpopap__title{
+        span{
+            font-weight: 700;
+            color: #161C2F;
+            &:first-child{
+                color: #A7C32B;
+            }
+        }
+    }
+    .contentpopap__text{
+        font-weight: 700;
+        font-size: rem(35);
+        line-height: rem(43);
+    }
+}
+
+
 @media screen and (max-width:769px){
-    
+    .contentpopap{
+        width: rem(540);
+        padding: rem(40) 0 rem(40) 0;
+
+        &__close{
+            position: absolute;
+            width: rem(24);
+            height: rem(24);
+        }
+
+        &__title{
+            font-size: rem(30);
+            line-height: rem(37);
+        }
+
+        &__text{
+            font-size: rem(30);
+            line-height: rem(37);
+        }
+    }
+
+    .modalDialogCustom2{
+        .contentpopap__text{
+            font-size: rem(20);
+            line-height: rem(24);
+        }
+    }
     
 }

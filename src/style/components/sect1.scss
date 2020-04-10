@@ -82,6 +82,10 @@
         bottom: 0;
         right: rem(78);
     }
+
+    &__vetki2, &__vetki3{
+        display: none;
+    }
 }
 
 .rebus{
@@ -179,17 +183,207 @@
 
 .quantity-up{ 
     background-image: url("../images/plus.svg");
-    top: -35px;
+    top: rem(-35);
 }
 
 .quantity-down{
     background-image: url("../images/minus.svg");
-    bottom: -35px;
+    bottom: rem(-35);
 }
 
 
 @media screen and (max-width:769px){
     .sect1{
-        
+        &__top{
+            padding: rem(23) 0 rem(63) 0; 
+        }
+
+        &__title, &__text{
+            font-size: rem(22);
+            line-height: rem(27);
+        }
+
+        &__middle{
+            padding-bottom: rem(57.28);
+        }
+
+        &__bottom{
+            padding-bottom: rem(282);
+        }
+
+        &__button{
+            width: rem(383);
+            height: rem(79);
+            font-size: rem(35);
+            line-height: rem(43);
+        }
+
+        &__planeta{
+            width: rem(694);
+            height: rem(694);
+            top: rem(201.4);
+            left: rem(-85);
+        }
+
+        &__zayats{
+            bottom: 0;
+            left: rem(54);
+        }
+
+        &__vetki2, &__vetki3{
+            display: block;
+            position: absolute;
+        }
+
+        &__vetki2{
+            width: rem(258);
+            height: rem(297.94);
+            top: rem(193);
+            right: rem(-124);
+        }
+
+        &__vetki3{
+            width: rem(283.11);
+            height: rem(326.94);
+            bottom: rem(-26);
+            right: 0;
+        }
     }
+
+    .rebus{
+        flex-direction: column;
+        padding: 0;
+
+        &__left{
+            padding: rem(28.4) 0 0 0;
+            text-align: center;
+        }
+
+        &__right{
+            padding: rem(53) 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__eggs{
+            width: rem(548);
+            height: rem(549.16);
+        }
+    }
+
+    .castle{
+        &__vetki{
+            left: -67%;
+            top: rem(200);
+        }
+    }
+}
+
+
+@media screen and (max-width:450px){
+    .sect1{
+    
+        &__top{
+            background-image: url("../images/bg_m.svg");
+            // background-size: cover;
+            padding: rem(50) 0 rem(73) 0;
+        }
+
+        &__title, &__text{
+            font-size: rem(26);
+            line-height: rem(39);
+        }
+
+        &__middle{
+            padding-top: rem(74);
+        }
+
+        &__vetki2{
+            top: rem(950);
+        }
+
+        &__vetki3{
+            display: none;
+        }
+
+        &__planeta{
+            top: rem(329.4);
+            left: rem(-133);
+        }
+
+        &__zayats{
+            right: rem(48);
+            left: unset;
+        }
+    }
+
+    .rebus{
+        padding: 0 rem(25);
+
+        &__left{
+            padding: rem(38) 0 0 0;
+        }
+
+        &__eggs{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .castle{
+        width: rem(624);
+        height: rem(638);
+        padding: 0;
+
+        &__img{
+            width: rem(608);
+            height: rem(683.2);
+            left: unset;
+        }
+
+        &__block{
+            bottom: rem(40);
+            width: rem(432);
+            left: rem(102.4);
+            height: rem(272);
+            padding: 0 rem(53);
+        }
+
+        &__vetki{
+            top: rem(688);
+            left: rem(-176);
+        }
+    }
+
+
+        
+    .quantity{
+        position: relative;
+
+        &__input{
+            width: rem(135.92);
+            height: rem(196.11);
+            font-size: rem(132);
+            line-height: rem(136);
+            padding-bottom: rem(20);
+            padding-right: rem(4.4);
+        }
+    }
+
+    .quantity-button{
+        width: rem(70);
+        height: rem(52);
+    }
+
+    .quantity-up{ 
+        background-image: url("../images/plus.svg");
+        top: rem(-41.4);
+    }
+
+    .quantity-down{
+        background-image: url("../images/minus.svg");
+        bottom: rem(-44.6);
+    }
+
+
 }
