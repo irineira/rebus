@@ -1,5 +1,4 @@
 .modalDialogCustom{
-    // transform: translateY(-100%);
     display: none;
     position: fixed;
     top: 0;
@@ -13,7 +12,6 @@
 }
 
 .modalDialogCustom_active{
-    // transform: translateY(0);
     display: block;
     transition: .5s;
 }
