@@ -1,5 +1,6 @@
 .modalDialogCustom{
-    transform: translateY(-100%);
+    // transform: translateY(-100%);
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +13,8 @@
 }
 
 .modalDialogCustom_active{
-    transform: translateY(0);
+    // transform: translateY(0);
+    display: block;
     transition: .5s;
 }
 
@@ -31,9 +33,9 @@
 .contentpopap{
     background-color: white;
     position: absolute;
-    top: rem(400);
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 20;
     width: rem(800);
     box-shadow: 0px 0px rem(60) rgba(0, 0, 0, 0.5);
@@ -59,10 +61,11 @@
     &__text{
         font-family: Montserrat;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 700;
         font-size: rem(40);
         line-height: rem(49);
         color: #161C2F;
+        text-transform: uppercase;
     }
 
     &__close{
@@ -73,6 +76,7 @@
         height: rem(34);
         background-image: url("../images/close.svg");
         background-size: cover;
+        cursor: pointer;
         
     }
 }
@@ -124,5 +128,40 @@
             line-height: rem(24);
         }
     }
-    
+}
+
+
+@media screen and (max-width:450px){
+    .contentpopap{
+        width: 90%;
+        padding-top: rem(72);
+
+        &__close{
+            position: absolute;
+            width: rem(40);
+            height: rem(40);
+        }
+
+        &__title{
+            font-size: rem(40);
+            line-height: rem(47);
+        }
+
+        &__text{
+            font-size: rem(40);
+            line-height: rem(47);
+        }
+    }
+
+    .modalDialogCustom2{
+        .contentpopap{
+            padding-top: rem(40);
+        }
+        .contentpopap__text{
+            font-size: rem(30);
+            line-height: rem(34);
+            text-transform: none;
+            font-weight: 400;
+        }
+    }
 }
