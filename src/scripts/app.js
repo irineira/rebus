@@ -42,18 +42,18 @@ jQuery('.quantity').each(function() {
 
 			if($(".quantity__input1").val() =="1" && $(".quantity__input2").val() =="5"){
 				$('.modalDialogCustom2').addClass('modalDialogCustom_active');
-        $(body).css('overflow', 'hidden');
+        // $(body).css('overflow', 'hidden');
 			}
 			else{
 				$(".quantity__input1").val(0);
 				$(".quantity__input2").val(0);
 				$('.modalDialogCustom1').addClass('modalDialogCustom_active');
-        $(body).css('overflow', 'hidden');
+        // $(body).css('overflow', 'hidden');
 			}
 
     });
 
     $('.contentpopap__close, .shadow_popap').click(function() {
         $('.modalDialogCustom').removeClass('modalDialogCustom_active');
-        $(body).css('overflow', 'visible');
+        // $(body).css('overflow', 'visible');
     });
